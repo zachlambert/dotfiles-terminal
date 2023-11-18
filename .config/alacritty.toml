@@ -1,0 +1,29 @@
+[env]
+term = 'xterm-256color'
+
+[font]
+size = 12.5
+normal = { family = 'Liberation Mono' }
+offset = { x = 0, y = 0 }
+
+[colors.primary]
+background = '0x111111'
+foreground = '0xFFFFFF'
+
+# Disable zoom keybindings since they conflict with vim keybindings
+[[keyboard.bindings]]
+key = 'Minus'
+mods = 'Control'
+action = 'ReceiveChar'
+[[keyboard.bindings]]
+key = 'Plus'
+mods = 'Control'
+action = 'ReceiveChar'
+[[keyboard.bindings]]
+key = 'Equals'
+mods = 'Control'
+action = 'ReceiveChar'
+
+[window]
+opacity = 0.85
+decorations = 'Full'
